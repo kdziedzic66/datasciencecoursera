@@ -1,0 +1,74 @@
+---
+title: "CodeBook"
+author: "Krzysztof Dziedzic"
+date: "13 lipca 2015"
+output: html_document
+---
+
+The subjects labeled $1-30$ have been asked to perform 6 activities. During the experiments some parameters (body acceleration, total acceleration - measured by accelometer and velocity measured by gyroscope in each direction - x,y,z) have been measured in 2.56 sec window. The data contained in tidyData.txt measures the standard deviation and the mean for each parameter in window, so the single row in the dataset corresponds to observation in the single window. Also the information about the subject and activity performed is contained, and average value for each feature with respect to the subject and activity performed,  so to sum up: we've got 10299 observations of 56 variables in the dataset. All features expext of factors have been normalized to take values between -1 and 1. Names of the features in the dataset are not very "human readable", because there are a lot of them, however have been explained in detail in this codebook.
+
+* **Subj**
+1..30 factor, labels subject for which the observation has been done
+
+* **Act** character factor, labels which activity has been performed in each observation
+    * standing
+    * sitting
+    * laying
+    * walking
+    * walkingUp
+    * walkingDown
+* **BASdX** numeric, measures standard deviation of body acceleration in direction x , unit: gravity
+* **BAMX** numeric, measures mean of boddy acceleration in direction x,  unit:gravity
+* **BASdY** numeric, measures standard deviation of body acceleration in direction y ,unit: gravity
+* **BAMY** numeric, measures mean of body acceleration in direction y unit:gravity
+* **BASdZ** numeric, measures standard deviation of body acceleration in direction z, unit:gravity
+* **BAMZ** numeric, measures mean of body acceleration in direction z, unit:gravity
+* **BGSdX** numeric, measures standard deviation of velocity in direction x, unit: $\frac{radians}{s}$
+* **BGMX** numeric, measures mean of velocity in direction x, unit: $\frac{radians}{s}$
+* **BGSdY** numeric, measures standard deviation of velocity in direction y, unit: $\frac{radians}{s}$
+* **BGMY** numeric, measures mean of velocity in direction y, unit: $\frac{radians}{s}$
+* **BGSdZ** numeric, measures standard deviation of velocity in direction z, unit: $\frac{radians}{s}$
+* **BGMZ** numeric, measures mean of velocity in direction z, unit: $\frac{radians}{s}$
+* **TASdX** numeric, measures standard deviation of total acceleration in direction x, unit:gravity
+* **TAMX** numeric, measures mean of total acceleration in direction x, unit:gravity
+* **TASdY** numeric, measures standard deviation of total acceleration in direction y, unit:gravity
+* **TAMY** numeric, measures mean of total acceleration in direction y, unit:gravity
+* **TASdZ** numeric, measures standard deviation of total acceleration in direction z, unit:gravity
+* **TAMZ** numeric, measures mean of total acceleration in direction z, unit:gravity
+* **Avg1S** numeric, measures average value of BASdX per subject, unit:gravity
+* **Avg1A** numeric, measures average value of BASdX per activity, unit:gravity
+* **Avg2S** numeric, measures average value of BAMX per subject, unit:gravity
+* **Avg2A** numeric, measures average value of BAMX per activity, unit:gravity
+* **Avg3S** numeric, measures average value of BASdY per subject, unit:gravity
+* **Avg3A** numeric, measures average value of BASdY per activity, unit:gravity
+* **Avg4S** numeric, measures average value of BAMY per subject, unit:gravity
+* **Avg4A** numeric, measures average value of BAMY per activity, unit:gravity
+* **Avg5S** numeric, measures average value of BASdZ per subject, unit:gravity
+* **Avg5A** numeric, measures average value of BASdZ per activity, unit:gravity
+* **Avg6S** numeric, measures average value of BAMZ per subject, unit:gravity
+* **Avg6A** numeric, measures average value of BAMZ per avctivity, unit:gravity
+* **Avg7S** numeric, measures average value of BGSdX per subject, unit: $\frac{radians}{s}$
+* **Avg7A** numeric, measures average value of BGSdX per activity, unit: $\frac{radians}{s}$
+* **Avg8S** numeric, measures average value of BGMX per subject, unit: $\frac{radians}{s}$
+* **Avg8A** numeric, measures average value of BGMX per activity, unit: $\frac{radians}{s}$
+* **Avg9S** numeric, measures average value of BGSdY per subject, unit: $\frac{radians}{s}$
+* **Avg9A** numeric, measures average value of BGSdY per activity, unit:$\frac{radians}{s}$
+* **Avg10S** numeric, measures average value of BGMY per subject, unit:$\frac{radians}{s}$
+* **Avg10A** numeric, measures average value of BGMY per activity, unit:$\frac{radians}{s}$
+* **Avg11S** numeric, measures average value of BGSdZ per subject, unit:$\frac{radians}{s}$
+* **Avg11A** numeric, measures average value of BGSdZ per activity, unit: $\frac{radians}{s}$
+* **Avg12S** numeric, measures average value of BGMZ per subject, unit: $\frac{radians}{s}$
+* **Avg12A** numeric, measures average value of BGMZ per activity, unit: $\frac{radians}{s}$
+* **Avg13S** numeric, measures average value of TASdX per subject, unit:gravity
+* **Avg13A** numeric, measures average value of TASdX per activity, unit:gravity
+* **Avg14S** numeric, measures average value of TAMX per subject, unit:gravity
+* **Avg14A** numeric, measures average value of TAMX per activity, unit:gravity
+* **Avg15S** numeric, measures average value of TASdY per subject, unit:gravity
+* **Avg15A** numeric, measures average value of TASdy per activity, unit:gravity
+* **Avg16S** numeric, measures average value of TAMY per subject, unit:gravity
+* **Avg16A** numeric, measures average value of TAMY per activity, unit:gravity
+* **Avg17S** numeric, measures average value of TASdZ per subject, unit:gravity
+* **Avg17A** numeric, measures average value of TASdZ per activity, unit:gravity
+* **Avg18S** numeric, measures average value of TAMZ per subject, unit:gravity
+* **Avg18A** numeric, measures average value of TAMZ per activity, unit:gravity
+

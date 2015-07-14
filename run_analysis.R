@@ -57,5 +57,5 @@
      }
   
     
-  write.table(df,"tidyDat.txt",sep=",",row.names=FALSE)
+  write.table(df,"tidyData.txt",row.names=FALSE)
  
