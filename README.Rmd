@@ -1,0 +1,32 @@
+---
+title: "README"
+author: "Krzysztof Dziedzic"
+date: "15 lipca 2015"
+output: html_document
+---
+
+##Assumption
+
+We assume that the Samsung files from .zip archive have been extracted to working directory and they are not located in any subfolders. 
+
+##1
+
+Lines 3-5 read data from files y_test.txt and y_train.txt, than merges them into one column vector with integer values with range 1..6. Next (line 6) a character vector with the ordered names of activities is created and finally line 8 assign name to ID of each activity.
+
+##2
+
+Lines 10-11 read data from subject_test.txt and subject_train.txt, than the data is merged into one column vector.
+
+Finally in line 14 vector created in point 1 is merged with the one created in point two and assigned to the variable df.
+
+##3
+
+In while loop files in the following order are being read and merged (in each iteration two files are loaded - training data with the corresponding test data ) body_acc_x_train.txt" , "body_acc_x_test.txt", "body_acc_y_train.txt","body_acc_y_test.txt",
+    "body_acc_z_train.txt","body_acc_z_test.txt","body_gyro_x_train.txt","body_gyro_x_test.txt","body_gyro_y_train.txt",
+    "body_gyro_y_test.txt","body_gyro_z_train.txt","body_gyro_z_test.txt","total_acc_x_train.txt","total_acc_x_test.txt","total_acc_y_train.txt",
+          "total_acc_y_test.txt","total_acc_z_train.txt","total_acc_z_test.txt
+After loading the files sd and mean are applied to each row of the data which creates two column vectors which are merged to the existing variable df.
+
+##4
+
+Variables "Subj" and "Act" are converted to factors to apply tapply inside loop for which adds new variables (average values of all features per Subj and per Act). 
